@@ -18,9 +18,9 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 from keras.models import load_model
 
-sys.path.append('../src/')
-from python import helper as hp
-from python import fixed_parameters as FP
+#sys.path.append('../src/')
+from virtual_libraries.src.python import helper as hp
+from virtual_libraries.src.python import fixed_parameters as FP
 
 parser = argparse.ArgumentParser(description='SMILES generation')
 parser.add_argument('-fn','--filename', type=str, help='Path to the fine-tuning txt file', required=True)
